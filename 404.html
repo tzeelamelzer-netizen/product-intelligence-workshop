@@ -1,16 +1,12 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Product Intelligence Engine Workshop</title>
+<head><meta charset="utf-8"><title>Product Intelligence Engine Workshop</title>
 <script>
-const BASE='/product-intelligence-workshop';
-const TOTAL=20;
-const match=location.pathname.match(/\/(\d+)\/?$/);
-const requested=match ? Number(match[1]) : NaN;
-const slide=Number.isInteger(requested) && requested>=1 && requested<=TOTAL ? requested : 1;
-location.replace(`${BASE}/${slide}`);
-</script>
-</head>
-<body></body>
-</html>
+(function(){
+  const BASE='/product-intelligence-workshop', TOTAL=20;
+  const m=location.pathname.match(/\/(\d+)\/?$/);
+  const n=m ? Number(m[1]) : NaN;
+  const slide=Number.isInteger(n) && n>=1 && n<=TOTAL ? n : 1;
+  location.replace(BASE + '/?slide=' + slide);
+})();
+</script></head><body></body></html>

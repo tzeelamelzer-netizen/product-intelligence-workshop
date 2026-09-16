@@ -19,9 +19,14 @@ body:hover #counter{opacity:1}
 const TOTAL=20;
 const BASE='/product-intelligence-workshop';
 function num(){
-  const m=location.pathname.match(/\/(\d+)\/?$/);
+  const q = new URLSearchParams(location.search).get('slide');
+  if(q !== null){
+    const n = Number(q);
+    return Number.isInteger(n) && n>=1 && n<=TOTAL ? n : 1;
+  }
+  const m = location.pathname.match(/\/(\d+)\/?$/);
   if(!m) return 1;
-  const n=Number(m[1]);
+  const n = Number(m[1]);
   return Number.isInteger(n) && n>=1 && n<=TOTAL ? n : 1;
 }
 let current=num();
