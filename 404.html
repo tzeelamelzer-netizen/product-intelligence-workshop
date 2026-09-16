@@ -1,1 +1,16 @@
-<!doctype html><meta charset="utf-8"><script>location.replace('/product-intelligence-workshop/'+((location.pathname.match(/\/(\d+)\/?$/)||[])[1]||'1'))</script>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Product Intelligence Engine Workshop</title>
+<script>
+const BASE='/product-intelligence-workshop';
+const TOTAL=20;
+const match=location.pathname.match(/\/(\d+)\/?$/);
+const requested=match ? Number(match[1]) : NaN;
+const slide=Number.isInteger(requested) && requested>=1 && requested<=TOTAL ? requested : 1;
+location.replace(`${BASE}/${slide}`);
+</script>
+</head>
+<body></body>
+</html>
