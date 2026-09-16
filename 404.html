@@ -1,5 +1,1 @@
-<!doctype html><meta charset="utf-8"><script>
-const base='/product-intelligence-workshop';
-const m=location.pathname.match(/\/(\d+)\/?$/);
-location.replace(base+'/'+(m?m[1]:'1'));
-</script>
+<!doctype html><meta charset="utf-8"><script>location.replace('/product-intelligence-workshop/'+((location.pathname.match(/\/(\d+)\/?$/)||[])[1]||'1'))</script>

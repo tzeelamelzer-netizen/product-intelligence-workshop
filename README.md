@@ -1,11 +1,4 @@
 # Product Intelligence Engine Workshop
+Public GitHub Pages presentation rendered directly from `Product_Intelligence_Engine_Workshop_Public.pdf`.
 
-Public web presentation for the Product Intelligence Engine workshop.
-
-## Navigation
-- Left / Right arrows: previous / next slide
-- Space / Enter: next slide
-- F: full screen
-- Direct slide URLs: `/1`, `/2`, ... `/20`
-
-Hosted with GitHub Pages.
+Navigation: Left/Right arrows, Space/Enter, swipe, Home/End. Press F for fullscreen.
